@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import Backgroud from "./assets/panel-one.svg";
+import Backgroud from "../../assets/panel-one.svg";
+import {  Link } from "react-router-dom";
 export const Container = styled.div`
   background: url("${Backgroud}");
   background-size: cover;
@@ -42,38 +43,17 @@ export const H1 = styled.h1`
   margin-bottom: 80px;
 `;
 
-export const InputLabel = styled.p`
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 22px;
-  letter-spacing: -0.40799999237060547px;
-  text-align: left;
-  color: rgba(238, 238, 238, 1);
-  margin-left: 25px;
-`;
-
-export const Input = styled.input`
-  border-radius: 14px;
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  border: none;
-  outline: none;
+export const Button = styled(Link)`
   width: 342px;
   height: 58px;
-  padding-left: 25px;
-  margin-bottom: 34px;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 28.13px;
-  color: #eeeeee;
-`;
+  margin-top: 130px;
+  
 
-export const Button = styled.button`
-  width: 342px;
-  height: 58px;
+  text-decoration: none;
+
   border-radius: 14px;
-  border: none;
-  background: rgba(0, 0, 0, 0.8);
+  border: 1px solid #ffffff;
+  background: transparent ;
 
   font-size: 17px;
   font-weight: 700;
@@ -92,6 +72,11 @@ export const Button = styled.button`
 
   &:active{
     opacity: 0.5;
+  }
+
+  img{
+  transform:rotateY(180deg);
+  
   }
 `;
 
